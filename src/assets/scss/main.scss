@@ -1,0 +1,72 @@
+@use '_variables' as *;
+@use '_fonts' as *;
+@use '_objects' as *;
+
+// tags
+h1 {
+  font-size: $text-4xl;
+}
+
+h2 {
+  color: $light-gray;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+// classes
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.l-half-v{
+  height: 50vh;
+}
+
+
+.l-bg{
+  background-image: radial-gradient(circle, #161616, #535353);
+}
+
+.z--2 {
+  z-index: -2;
+}
+
+.z--1 {
+  z-index: -1;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2{
+  z-index: 2;
+}
+
+.z-3{
+  z-index: 3;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
+}
