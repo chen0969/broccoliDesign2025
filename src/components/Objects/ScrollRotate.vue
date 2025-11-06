@@ -50,6 +50,7 @@ onMounted(() => {
         hoverTween = gsap.to(imgRef.value, {
             rotation: props.rotateDeg - 10, // rotate +10°
             duration: 0.3,
+            scale: 1.3,
             ease: 'power1.out'
         })
     })
@@ -60,6 +61,7 @@ onMounted(() => {
         gsap.to(imgRef.value, {
             rotation: props.rotateDeg + 10,
             duration: 0.3,
+            scale: 1,
             ease: 'power1.inOut'
         })
     })

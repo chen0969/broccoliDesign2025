@@ -7,10 +7,14 @@ import DeveloperSwitcher from '@/components/Objects/TextSwitcher.vue';
 const myWords = ['For Products', 'For Business', 'For Events', 'For Memories'];
 
 import ScrollRotate from '@/components/Objects/ScrollRotate.vue';
+import ImgSpinner from '@/components/Objects/ImgSpinner.vue';
 
 // img
-import supply0V1 from '@/assets/medias/des/supply0-v1.png';
-import supply0V2 from '@/assets/medias/des/supply0-v2.png';
+import Disexpo from '@/assets/medias/pho/dis-expo.jpg';
+import Displate from '@/assets/medias/pho/dis-plate.jpg';
+import Filmstyle from '@/assets/medias/pho/filmstyle.jpg';
+import Freebird from '@/assets/medias/pho/free-bird.jpg';
+import Freeparlbird from '@/assets/medias/pho/free-parl-bird.jpg';
 
 </script>
 
@@ -23,10 +27,20 @@ import supply0V2 from '@/assets/medias/des/supply0-v2.png';
             </div>
             <div class="col-md-8">
                 <div class="row g-4">
-                    <ScrollRotate class="col-6 col-md-4 p-5" :imgSrc="supply0V1" :rotateDeg="10" />
-                    <ScrollRotate class="col-6 col-md-4 p-5" :imgSrc="supply0V2" :rotateDeg="10" />
-                    <ScrollRotate class="col-6 col-md-4 p-5" :imgSrc="supply0V1" :rotateDeg="10" />
-                    <ScrollRotate class="col-6 col-md-4 p-5" :imgSrc="supply0V2" :rotateDeg="10" />
+                    <ScrollRotate class="col-6 col-md-6 p-5" :imgSrc="Filmstyle" :rotateDeg="10" />
+                    <ScrollRotate class="col-6 col-md-6 p-5" :imgSrc="Freebird" :rotateDeg="10" />
+                    <ScrollRotate class="col-6 col-md-4 p-5" :imgSrc="Disexpo" :rotateDeg="10" />
+                    <ScrollRotate class="col-6 col-md-5 p-5" :imgSrc="Freeparlbird" :rotateDeg="10" />
+                    <ScrollRotate class="col-6 col-md-3 p-5" :imgSrc="Displate" :rotateDeg="10" />
+                </div>
+                <div class="row">
+                    <ImgSpinner class="col-12" />
+                </div>
+                <div class="row g-4">
+                    <ScrollRotate class="col-6 col-md-4 p-5" :imgSrc="Disexpo" :rotateDeg="10" />
+                    <ScrollRotate class="col-6 col-md-4 p-5" :imgSrc="Displate" :rotateDeg="10" />
+                    <ScrollRotate class="col-6 col-md-4 p-5" :imgSrc="Disexpo" :rotateDeg="10" />
+                    <ScrollRotate class="col-6 col-md-4 p-5" :imgSrc="Displate" :rotateDeg="10" />
                 </div>
             </div>
         </div>
