@@ -34,7 +34,7 @@ import Freeparlbird from '@/assets/medias/pho/free-parl-bird.jpg';
                     <ScrollRotate class="col-6 col-md-3 p-5" :imgSrc="Displate" :rotateDeg="10" />
                 </div>
                 <div class="row">
-                    <ImgSpinner class="col-12" />
+                    <ImgSpinner class="col-12 h-100" />
                 </div>
                 <div class="row g-4">
                     <ScrollRotate class="col-6 col-md-4 p-5" :imgSrc="Disexpo" :rotateDeg="10" />
